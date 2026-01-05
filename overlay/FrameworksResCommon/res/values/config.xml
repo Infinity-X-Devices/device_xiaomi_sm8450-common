@@ -362,4 +362,14 @@
     <!-- If not empty, sets the AVC codec profile level used for the internal screen recorder.
          Possible values: 3, 3.1, 3.2, 4, 4.1, 4.2 -->
     <string name="config_screenRecorderAVCProfileLevel" translatable="false">3.1</string>
+
+    <!-- Paths to the libraries that contain device specific key handlers -->
+    <string-array name="config_deviceKeyHandlerLibs" translatable="false">
+        <item>/system_ext/priv-app/KeyHandler/KeyHandler.apk</item>
+    </string-array>
+
+    <!-- Names of the key handler classes -->
+    <string-array name="config_deviceKeyHandlerClasses" translatable="false">
+        <item>co.aospa.keyhandler.KeyHandler</item>
+    </string-array>
 </resources>

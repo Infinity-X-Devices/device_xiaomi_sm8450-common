@@ -33,6 +33,7 @@ import android.view.Display;
 import android.view.Display.HdrCapabilities;
 
 import org.lineageos.settings.doze.DozeUtils;
+import org.lineageos.settings.gestures.GestureUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.thermal.ThermalTileService;
 
@@ -80,6 +81,9 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         // Start Thermal Management Services
         ThermalUtils.startService(context);
+
+        // Initialize Fingerprint Double Tap hardware state
+        GestureUtils.INSTANCE.onBootCompleted(context);
     }
 
     private void overrideHdrTypes(Context context) {
