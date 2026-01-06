@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.settings.utils;
+package org.lineageos.settings.utils
 
 import android.util.Log
 
